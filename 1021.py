@@ -6,7 +6,7 @@ notas = int(n)
 moedas = (n - notas) * 100
 
 if (int((moedas*1000) % 10) == 9):
-  moedas += 1
+  moedas = round(moedas)
 
 print('NOTAS:')
 for i in cedulas: 
